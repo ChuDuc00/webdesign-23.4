@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thêm ảnh đẹp</title>
+</head>
+<body>
+
+  <div id="bo">
+     xem ảnh nhé
+
+  <button onclick="addnode_img()">Thêm ảnh đẹp </button>
+
+  <script>
+    function addnode_img() {
+      var pt = document.createElement('img');
+      pt.src = "https://tophinhanhdep.com/wp-content/uploads/2021/10/720x1480-Wallpapers.jpg"; // Đường dẫn đến ảnh đẹp (cùng thư mục)
+      pt.alt = "Ảnh đẹp";
+      pt.width = 300;
+      document.getElementById("bo").appendChild(pt);
+    }
+  </script>
+
+</body>
+</html>
